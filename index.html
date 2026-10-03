@@ -3,80 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khadak Bohara | Personal Portfolio</title>
+    <meta name="description" content="Khadak Bohara's professional portfolio">
+    <title>Khadak Bohara | Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Khadak Bohara</h1>
-        <p>Bachelor of Information Technology Student</p>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Technical Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+
+                <div class="brand">
+                    <h1>Khadak Bohara</h1>
+                    <p>Computer Science Student &amp; Web Developer</p>
+                </div>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
     </header>
+
+
+    <!-- Main Content -->
     <main>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Profile photograph of Khadak Bohara" width="200" height="200">
-        <p>Hello! My name is Khadak Bohara. I am a second-year Bachelor of Information Technology (BIT) student.</p>
-        <p>I enjoy learning new technologies and developing practical projects that help me improve my technical and problem-solving skills.</p>
-    </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>The following are some of the technical areas I have studied and practiced during my BIT course:</p>
-        <dl>
-            <dt>HTML5</dt>
-            <dd>Creating structured web pages using semantic elements and accessible HTML forms.</dd>
-            <dt>Java Programming</dt>
-            <dd>Developing object-oriented applications and understanding core software engineering concepts.</dd>
-        </dl>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <article>
-            <h3>Project 1: Personal Portfolio Website</h3>
-            <p>This project is a single-page personal portfolio developed using semantic HTML5. It presents my biography, skills, and projects.</p>
-            <p><strong>Technologies Used:</strong> HTML5</p>
-            <p><a href="https://github.com/khadakbohara/personal-portfolio">View Portfolio Repository on GitHub</a></p>
-        </article>
-        <article>
-            <h3>Project 2: Java Student Management System</h3>
-            <p>A console-based Java application built to manage student records, grades, and enrollment information efficiently.</p>
-            <p><strong>Technologies Used:</strong> Java</p>
-            <p><a href="https://github.com/khadakbohara/student-management-system">View Java Project Repository on GitHub</a></p>
-        </article>
-    </section>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you would like to contact me regarding projects, learning opportunities, or collaboration, please complete the form below:</p>
-        <form action="#" method="post">
+                <div class="hero-content">
+
+                    <div class="hero-text">
+                        <p class="intro-label">WELCOME TO MY PORTFOLIO</p>
+
+                        <h2>
+                            Building my skills through technology and creativity.
+                        </h2>
+
+                        <p>
+                            I am a computer science student interested in web development,
+                            networking, programming, and creating practical digital solutions.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a class="button primary-button" href="#projects">
+                                View Projects
+                            </a>
+
+                            <a class="button secondary-button" href="#contact">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Profile Card -->
+                    <div class="hero-card">
+
+                        <div class="profile-image">
+                            <img src="image/profile.jpg"
+                                 alt="Profile photo of Khadak Bohara">
+                        </div>
+
+                        <h3>Khadak Bohara</h3>
+                        <p>Student Developer</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">ABOUT ME</p>
+                    <h2>Who I Am</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-image">
+
+                        <!-- Profile image from image folder -->
+                        <img src="image/profile.jpg"
+                             alt="Portrait of Khadak Bohara">
+
+                    </div>
+
+                    <div class="about-text">
+
+                        <h3>Learning, creating, and improving</h3>
+
+                        <p>
+                            I am a computer science student developing my knowledge in
+                            programming, networking, system administration, and web
+                            technologies. I enjoy working on practical projects that
+                            help me understand how technology can solve real-world problems.
+                        </p>
+
+                        <p>
+                            My interests include responsive website development,
+                            computer networking, Linux systems, cloud technologies,
+                            and software development.
+                        </p>
+
+                        <dl class="personal-details">
+
+                            <div>
+                                <dt>Field</dt>
+                                <dd>Computer Science</dd>
+                            </div>
+
+                            <div>
+                                <dt>Focus</dt>
+                                <dd>Web &amp; Networking</dd>
+                            </div>
+
+                            <div>
+                                <dt>Location</dt>
+                                <dd>Nepal</dd>
+                            </div>
+
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">MY SKILLS</p>
+                    <h2>Technical Skills</h2>
+
+                    <p>
+                        Technologies and areas that I have studied and practiced
+                        through academic and personal projects.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">01</div>
+                        <h3>Web Development</h3>
+                        <p>
+                            Creating structured and responsive websites using
+                            HTML5 and CSS3.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">02</div>
+                        <h3>Programming</h3>
+                        <p>
+                            Developing programming and problem-solving skills
+                            using C and Java.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">03</div>
+                        <h3>Networking</h3>
+                        <p>
+                            Studying routing, switching, IP addressing, NAT,
+                            VLANs, and network security.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">04</div>
+                        <h3>Linux Systems</h3>
+                        <p>
+                            Working with Linux commands, services, permissions,
+                            DNS, DHCP, and web servers.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">MY WORK</p>
+                    <h2>Featured Projects</h2>
+
+                    <p>
+                        Academic and practical projects that demonstrate
+                        my technical learning.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            PROJECT 01
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Responsive Portfolio Website</h3>
+
+                            <p>
+                                A personal portfolio developed using semantic
+                                HTML5 and custom CSS with responsive design.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Flexbox</li>
+                                <li>Responsive</li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            PROJECT 02
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Linux Network Services</h3>
+
+                            <p>
+                                A Linux administration project involving Apache,
+                                DNS, DHCP, and network service testing.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>Linux</li>
+                                <li>Apache</li>
+                                <li>BIND9</li>
+                                <li>DHCP</li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            PROJECT 03
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Quiz Game in C</h3>
+
+                            <p>
+                                A console-based quiz game created using C
+                                programming, structures, functions, and arrays.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>C</li>
+                                <li>Functions</li>
+                                <li>Structures</li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            PROJECT 04
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Cloud Storage Project</h3>
+
+                            <p>
+                                A cloud project focused on static website hosting
+                                and basic storage configuration using Amazon S3.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>AWS S3</li>
+                                <li>Cloud</li>
+                                <li>Hosting</li>
+                            </ul>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">EDUCATION</p>
+                    <h2>My Learning Journey</h2>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-date">
+                        <span>Academic</span>
+                    </div>
+
+                    <div class="education-info">
+
+                        <h3>Computer Science Education</h3>
+
+                        <p>
+                            My academic studies have provided knowledge in
+                            programming, computer networking, web development,
+                            operating systems, databases, and information technology.
+                        </p>
+
+                        <p>
+                            I also work on practical assignments and projects
+                            to develop hands-on technical experience.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div class="contact-text">
+
+                        <p class="section-label">GET IN TOUCH</p>
+
+                        <h2>Let's Connect</h2>
+
+                        <p>
+                            If you would like to discuss a project, technology,
+                            or collaboration opportunity, feel free to contact me.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-details">
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:your-email@example.com">
+                                your-email@example.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/"
+                               target="_blank"
+                               rel="noopener">
+                                GitHub Profile
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
             <p>
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required>
+                &copy; 2026 Khadak Bohara. All rights reserved.
             </p>
+
             <p>
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
+                Designed and developed as a personal portfolio project.
             </p>
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </p>
-            <p>
-                <button type="submit">Send Message</button>
-            </p>
-        </form>
-    </section>
-</main>
-footer>
-        <p>&copy; 2026 Khadak Bohara. All Rights Reserved.</p>
-        <p>Bachelor of Information Technology Student | International American University</p>
+
+        </div>
     </footer>
+
 </body>
 </html>
